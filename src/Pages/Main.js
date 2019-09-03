@@ -8,8 +8,8 @@ import { getFilms } from '../API/Dados'
 const Main = () => {
     const [films, setFilms] = useState([]);
     useEffect(() => {
-        getFilms().then(({ data }) => { // destructuring
-        setFilms(data)
+        getFilms().then(({ data: {results}}) => { // Pegar results para mostrar os dados
+        setFilms(results)
       }).catch((error) => {
         console.log(error)
       })
