@@ -2,8 +2,11 @@ import React from 'react'
 import { Link } from "react-router-dom";
 import './movieItem.css'
 
+let id = /\d/;
+
 //usar destructuring e template literals
 const MovieItem = ({ movie }) => (
+  
   <div>
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Star_Wars_Logo.svg" alt={movie.title} />
     <div className="img-legend">
@@ -14,7 +17,7 @@ const MovieItem = ({ movie }) => (
         </h6>
       </div>
       <div className="more-details">
-        <Link to={`/filme/${movie.id}`} >
+        <Link to={`/filme/${id.exec(movie.url)}`} >
           <span>+</span>
         </Link>
       </div>
