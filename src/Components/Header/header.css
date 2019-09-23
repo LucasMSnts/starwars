@@ -1,7 +1,7 @@
 .fixed-menu {
     height: 70px;
     width: 100%;
-    background-color: rgba(97, 61, 155, 0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     position: fixed;
     z-index: 1;
     display: flex;
@@ -10,7 +10,7 @@
 }
 
 .fixed-menu.darker {
-    background-color: rgba(97, 61, 155, 1);
+    background-color: rgb(102, 102, 102);
 }
   
 .fixed-menu div {
@@ -39,11 +39,12 @@
     padding: 0px 10px;
     display: flex;
     justify-content: center;
+    align-items: center;
     cursor: pointer;
 }
   
 .menu-content button:hover {
-    background-color: #e72f85;
+    background-color: #bcc721;
 }
   
 .menu-content button:focus {

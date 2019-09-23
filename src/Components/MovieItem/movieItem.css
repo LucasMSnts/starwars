@@ -5,7 +5,7 @@
   border-radius: 5px;
   position: absolute;
   bottom: 0;
-  color: white;
+  color: yellow;
   display: flex;
 }
 
@@ -22,12 +22,12 @@
 }
 
 .more-details a {
-  background-color: #e72f85;
+  background-color: #d3e016;
   border: 0px;
   border-radius: 20px;
   width: 37px;
   height: 37px;
-  color: white;
+  color: black;
   font-size: 35px;
   padding: 0px;
   display: flex;
@@ -37,8 +37,8 @@
 }
 
 .more-details a:hover {
-  background-color: #e5bace;
-  color: #e72f85;
+  background-color: #dbdf74;
+  color: #616060;
 }
 
 .more-details a:focus {

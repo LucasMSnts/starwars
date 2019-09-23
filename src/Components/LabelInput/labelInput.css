@@ -7,7 +7,7 @@
 .input-text {
   font-size: 16px;
   background-color: transparent;
-  border: 1px solid #613D9B;
+  border: 1px solid rgb(0, 0, 0);
   border-radius: 10px;
   height: 30px;
   padding: 5px 10px;
@@ -17,5 +17,5 @@
 
 .input-text:focus, .input-text:active {
   outline: none;
-  border: 2px solid #E72F85;
+  border: 2px solid rgb(126, 126, 126);
 }

@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react'
+import Header from '../Components/Header'
+import Hero from '../Components/Header/Hero'
 import MovieDetail from '../Components/MovieDetail'
 import MovieForm from '../Components/MovieForm'
 import { getFilmById } from '../API/Dados'
@@ -22,13 +24,15 @@ const MovieView = ({ match }) => {
 
     return (
         <div>
+          <Header />
+          <Hero />
           {
             isEditing ?
               <MovieForm movie={film} /> :
               <MovieDetail movie={film} handleEdit={handleEdit} />
           }
         </div>
-      )
+    )
 }
 
 export default MovieView
